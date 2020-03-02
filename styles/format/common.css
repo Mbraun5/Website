@@ -123,6 +123,18 @@ body {
   text-align: left;
 }
 
+.experience-txt ul{
+  list-style-position: inside;
+}
+
+#experience-txt-group .color_one {
+  text-indent: -1.5em;
+}
+
+#experience-txt-group .color_two {
+  text-indent: -1.5em;
+}
+
 .active-text {
   display: block;
 }
