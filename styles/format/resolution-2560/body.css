@@ -126,7 +126,11 @@ hr {
 .social_icons a img{
     width: 150px;
     height: 150px;
-    padding-bottom: 25px;
+    padding-bottom: 1em;
+}
+
+.contact {
+    padding-top: 1em;
 }
 
 #contact .contact_text_one {
