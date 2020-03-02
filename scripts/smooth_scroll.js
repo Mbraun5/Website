@@ -1,4 +1,5 @@
 var scrolling = false;
+var scroll_time;
 var href;
 
 // Prevent multiple scrolling queries.
@@ -12,10 +13,10 @@ $(document).ready(function(){
     $("a").on('click', function(event) {
         // Make sure this.hash has a value before overriding default behavior
         if (scrolling) {
+            event.preventDefault();
             return
-        } else {
-            scrolling = true;
         }
+
         if (this.hash !== "") {
         // Prevent default anchor click behavior
         event.preventDefault();
@@ -23,14 +24,18 @@ $(document).ready(function(){
         // Store hash
         var hash = this.hash;
 
-        var scroll_time;
-        if (Math.abs(window.pageYOffset - $(hash).offset().top) < 600) {
-            scroll_time = 400;
-        }
-        else {
-            scroll_time = 800
+        try {
+            if (Math.abs(window.pageYOffset - $(hash).offset().top) < 600) {
+                scroll_time = 400;
+            }
+            else {
+                scroll_time = 800
+            }
+        } catch (exception) {
+            return;
         }
 
+        scrolling = true;
         // 800 milliseconds to scroll to location.
         if (hash == "#home") {
             $('html, body').animate({
