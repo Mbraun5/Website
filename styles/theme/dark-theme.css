@@ -8,7 +8,7 @@ header {
 
 /*  Link text color */
 .navbar a {
-    color: #cdcbd4;
+    color: #d7f2ff;
 }
 
 /* Link text hover effect */
@@ -125,3 +125,36 @@ footer {
 .footer p {
   color: #cdcbd4;
 }
+
+
+/*
+#header {
+  opacity: 0;
+  display: none;
+  transition: 1s;
+}
+.section {
+  opacity: 0;
+  display: none;
+  transition: 1s;
+}
+#footer {
+  opacity: 0;
+  display: none;
+  transition: 1s;
+}
+*/
+
+/*
+#header {
+  display: block;
+}
+
+#body section {
+  display: block;
+}
+
+#footer {
+  display: block;
+}
+*/

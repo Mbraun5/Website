@@ -1,4 +1,8 @@
 @media only screen and (max-width: 420px) {
+    header .navbar-left img{
+        height: 12px;
+    }
+
     .one {
         font-size: 16px;
     }

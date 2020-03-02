@@ -18,6 +18,11 @@ header {
   transition: top 0.5s;
 }
 
+#logo img {
+  padding: 0px;
+  margin: 0px;
+}
+
 .navbar {
   display: table;
   width: 100%;
