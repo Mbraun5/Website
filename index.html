@@ -9,14 +9,13 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="format-detection" content="telephone=no">
         <title>Matthew Braun | Software Engineer</title>
-        <!-- <link href="../styles/light-theme.css" rel="stylesheet" type="text/css" id="theme"> -->
         <link href="./styles/theme/dark-theme.css" rel="stylesheet" type="text/css" id="theme">
         <link href="./styles/main.css" rel="stylesheet" type="text/css">
         <script src="./scripts/jquery.js"></script>
         <script src="./scripts/smooth_scroll.js"></script>
         <script src="./scripts/navbar.js"></script>
     </head>
-
+    
     <!-------------------------------------------------------------   
             Header Section    
     -------------------------------------------------------------->
@@ -24,7 +23,9 @@
         <div class="navbar">
             <div class="row" id="row-menu">
                 <div class="navbar-left" id="navbar-test">
-                    <a id="test" href="/">Logo</a>
+                    <a id="logo" href="/">
+                        <img src="./pages/logo.png" alt="personal logo">
+                    </a>
                 </div>
                 <div class="navbar-center">
                     <a href="/">Matthew Braun &nbsp;|&nbsp; Software Engineer</a>
@@ -263,39 +264,10 @@
     <!-------------------------------------------------------------   
             Footer Section    
     -------------------------------------------------------------->
-    <footer>
+    <footer id=footer>
         <div class="footer">
             <p>&#169; Matthew Braun &nbsp;|&nbsp; Designed and Built by Matthew Braun</p>
         </div>
     </footer>
     <script src="./scripts/buttons.js"></script>
 </html>
-
-
-<!--Functionality to change theme <script>
-var theme = document.getElementById("theme");
-var head = document.getElementById("head");
-head.removeChild(theme);
-
-var styleSheet = document.createElement('link');
-styleSheet.rel = 'stylesheet';
-styleSheet.type = 'text/css';
-styleSheet.href = '../styles/light-theme.css'; // name of your css file
-styleSheet.id = "theme"
-head.appendChild(styleSheet);
--->
-
-<!-- Initial Animation -->
-<!--
-<div class="text-container">
-    <span id="text">Matthew Braun</span>
-    <div class="text-underscore hidden" id="underscore">
-        &#95;
-    </div>
-    <span id="text_two">Software Engineer</span>
-    <div class="text-underscore hidden" id="underscore_two">
-        &#95;
-    </div>
-</div>
-<script src="../scripts/animation.js"></script>
--->
