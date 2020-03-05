@@ -7,7 +7,7 @@ window.onscroll = function() {
     (window.innerHeight + window.pageYOffset) >= document.body.offsetHeight) {
     document.getElementById("header").style.top = "0";
   } else {
-    if (currentScrollPos > 275){
+    if (currentScrollPos > (window.innerHeight / 4)){
         document.getElementById("header").style.top = "-75px";
     }
   }
