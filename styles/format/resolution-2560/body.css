@@ -10,10 +10,6 @@
     transform: translateX(-47%) translateY(-50%);
 }
 
-#home {
-    height: 98vh;
-}
-
 body #intro {
     top: 50%;
     text-align: left;
@@ -139,20 +135,4 @@ hr {
 
 #contact .contact_text_two {
     font-size: 40px;
-}
-
-#about {
-    display: none;
-}
-
-#experience {
-    display: none;
-}
-
-#contact {
-    display: none;
-}
-
-#footer {
-    display: none;
 }

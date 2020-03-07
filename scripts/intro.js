@@ -46,6 +46,7 @@ function animate_intro4() {
     }
   })).then(function() {
     document.getElementById("header").style.top = "0";
+    document.getElementById("home").style.height = "100vh";
     document.getElementById("about").style.display = "block";
     document.getElementById("experience").style.display = "block";
     document.getElementById("contact").style.display = "block";
