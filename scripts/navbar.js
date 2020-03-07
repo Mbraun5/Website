@@ -13,4 +13,5 @@ window.onscroll = function() {
   }
 
   prevScrollpos = currentScrollPos;
+  animate_about()
 }

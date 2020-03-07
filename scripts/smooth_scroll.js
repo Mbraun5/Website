@@ -36,7 +36,6 @@ $(document).ready(function(){
         }
 
         scrolling = true;
-        // 800 milliseconds to scroll to location.
         if (hash == "#home") {
             $('html, body').animate({
                 scrollTop: 0
