@@ -58,3 +58,6 @@ animate_intro(0, function() {
   $("#intro4").css({opacity: 1});
   animate_intro4()
 });
+
+
+/* Animate I am a software engineer line. Fade in 4th line all normally, then set CSS for solve problems */
