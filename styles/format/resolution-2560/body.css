@@ -107,6 +107,7 @@ hr {
 
 #experience-btn-group {
     width: 300px;
+    opacity: 0;
 }
 
 .experience-btn {

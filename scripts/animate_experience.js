@@ -1,5 +1,6 @@
 var experience_done = false;
 var experience_title_done = false;
+var experience_buttons_done = false;
 
 function animate_experience() {
     if (experience_done) {
@@ -8,6 +9,7 @@ function animate_experience() {
 
     var scroll_bottom = window.innerHeight + window.pageYOffset;
     animate_experience_title(scroll_bottom);
+    animate_experience_buttons(scroll_bottom);
 }
 
 function animate_experience_title(scroll_bottom) {
@@ -20,6 +22,21 @@ function animate_experience_title(scroll_bottom) {
         experience_title_done = true;
         $("#experience-title").animate({opacity: 1}, {queue: false, duration: 1500});
         $("#experience-hr").animate({opacity: 1}, {queue: false, duration: 1500});
+    }    
+}
+
+function animate_experience_buttons(scroll_bottom) {
+    if (experience_buttons_done) {
+        return;
+    }
+    var buttons_top = $("#experience-title").offset().top + (Math.ceil(window.innerHeight / 3))
+
+    if (scroll_bottom >= buttons_top) {
+        experience_buttons_done = true;
+        $("#experience-btn-group").animate({opacity: 1}, {queue: false, duration: 1500});
+        $("#experience-btn-group").css({marginLeft: -300}).animate({marginLeft: 0}, {queue: true, duration: 1500}, function() {
+            $(this).removeAttr('style');
+        });
     }    
 }
 
