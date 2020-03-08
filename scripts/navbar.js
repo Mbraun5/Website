@@ -13,5 +13,6 @@ window.onscroll = function() {
   }
 
   prevScrollpos = currentScrollPos;
-  animate_about()
+  animate_about();
+  animate_experience();
 }
