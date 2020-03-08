@@ -34,7 +34,7 @@ function animate_experience_buttons(scroll_bottom) {
     if (scroll_bottom >= buttons_top) {
         experience_buttons_done = true;
         $("#experience-btn-group").animate({opacity: 1}, {queue: false, duration: 1500});
-        $("#experience-btn-group").css({marginLeft: -300}).animate({marginLeft: 0}, {queue: true, duration: 1500}, function() {
+        $("#experience-btn-group").css({marginLeft: "-30vw"}).animate({marginLeft: "0vw"}, {queue: true, duration: 1500}, function() {
             $(this).removeAttr('style');
         });
     }    
