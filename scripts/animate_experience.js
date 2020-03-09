@@ -41,6 +41,9 @@ function animate_experience_buttons(scroll_bottom) {
             active_button.classList.toggle("active-button");
             active_text.classList.toggle("active-text");
             $("#experience-txt-group").children().eq(0).animate({opacity: 1}, 1000);
+            document.getElementById("exp-btn-1").disabled = false;
+            document.getElementById("exp-btn-2").disabled = false;
+            document.getElementById("exp-btn-3").disabled = false;
         }});
     }    
 }
@@ -52,16 +55,11 @@ function toggle_active(btn, idx) {
 
         active_text.classList.toggle("active-text")
         active_text = document.getElementById("experience-txt-group").children[idx];
-        $("#experience-txt-group").children().eq(idx).css({opacity: 0}).animate({opacity: 1}, 2000);
+        $("#experience-txt-group").children().eq(idx).css({opacity: 0}).stop().animate({opacity: 1}, 2000);
         active_text.classList.toggle("active-text");
 
         active_button = btn;
     }
 }
-
-function active_text(id) {
-
-}
-
 
 /* Add shadow effect to illustrate user has already selected a particular button */

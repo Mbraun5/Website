@@ -35,5 +35,10 @@
 
     .experience-txt {
         font-size: 24px;
+        width: 77%;
+    }
+
+    #experience-txt-group {
+        padding-left: 34vw;
     }
 }

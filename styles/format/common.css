@@ -142,7 +142,6 @@ body {
   text-align: left;
 }
 
-/* Remove these three lines if there are issues with Safari */
 .experience-txt ul{
   list-style-position: inside;
 }
@@ -154,7 +153,6 @@ body {
 #experience-txt-group .color_two {
   text-indent: -1.5em;
 }
-/**/
 
 .active-text {
   display: block;

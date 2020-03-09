@@ -38,6 +38,10 @@
         font-size: 18px;
     }
 
+    #experience-txt-group {
+        padding-left: 36vw;
+    }
+
     .experience-txt h4 {
         margin-top: -20px;
     }

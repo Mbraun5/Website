@@ -29,6 +29,10 @@
         height: 210px;
     }
 
+    #experience-txt-group {
+        padding-left: 37vw;
+    }
+
     .experience-txt {
         font-size: 16px;
     }

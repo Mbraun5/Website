@@ -150,13 +150,16 @@ hr {
 
 .experience-txt {
     font-size: 30px;
-    width: 85%;
+    width: 80%;
 }
 
 .experience-txt h4 {
     margin-top: -40px;
 }
 
+#experience-txt-group {
+    padding-left: 30vw;
+  }
 
 /************************************************************************************
         Contact Section
