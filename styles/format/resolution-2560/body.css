@@ -40,6 +40,13 @@ body #intro {
     margin-top: -15px;
 }
 
+.emphasis {
+    -webkit-transition: all 1.5s ease;
+    -moz-transition: all 1.5s ease;
+    -o-transition: all 1.5s ease;
+    transition: all 1.5s ease;
+}
+
 /************************************************************************************
         Common
 ************************************************************************************/
