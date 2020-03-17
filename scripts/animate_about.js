@@ -16,10 +16,12 @@ function animate_about() {
 
 function animate_about_title(scroll_bottom) {
     if (about_title_done) {
+        if (about_img_done && about_text_done) {
+            about_done = true;
+        }
         return;
     }
-    var title_top = $("#about-title").offset().top + (Math.ceil(window.innerHeight / 3))
-
+    var title_top = $("#about-title").offset().top + (Math.ceil(window.innerHeight / 3));
     if (scroll_bottom >= title_top) {
         about_title_done = true;
         $("#about-title").animate({opacity: 1}, {queue: false, duration: 1500});
@@ -29,7 +31,7 @@ function animate_about_title(scroll_bottom) {
 
 function animate_about_text(scroll_bottom) {
     if (about_text_done) {
-        if (about_img_done) {
+        if (about_img_done && about_title_done) {
             about_done = true;
         }
         return;
@@ -45,7 +47,7 @@ function animate_about_text(scroll_bottom) {
 
 function animate_about_img(scroll_bottom) {
     if (about_img_done) {
-        if (about_text_done) {
+        if (about_text_done && about_title_done) {
             about_done = true;
         }
         return;
