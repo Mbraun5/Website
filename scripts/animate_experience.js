@@ -3,6 +3,8 @@ var experience_title_done = false;
 var experience_buttons_done = false;
 var active_button = document.getElementById("experience-btn-group").children[0];
 var active_text = document.getElementById("experience-txt-group").children[0];
+active_text.classList.toggle("active-text");
+active_text.style.opacity = "0";
 
 function animate_experience() {
     if (experience_done) {
@@ -39,7 +41,6 @@ function animate_experience_buttons(scroll_bottom) {
         $("#experience-btn-group").animate({opacity: 1}, {queue: false, duration: 1500});
         $("#experience-btn-group").css({marginLeft: "-30vw"}).animate({marginLeft: "0vw"}, {queue: true, duration: 1500, complete: function() {
             active_button.classList.toggle("active-button");
-            active_text.classList.toggle("active-text");
             $("#experience-txt-group").children().eq(0).animate({opacity: 1}, 1000);
             document.getElementById("exp-btn-1").disabled = false;
             document.getElementById("exp-btn-2").disabled = false;
