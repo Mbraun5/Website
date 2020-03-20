@@ -1,6 +1,6 @@
 function toggle_dropdown(menu) {
     menu.classList.toggle("change");
-    $(document.activeElement).trigger("change");
+    menu.blur();
 }
 
 function nav_to_dropdown(dropdown_width){
