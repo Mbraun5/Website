@@ -102,6 +102,10 @@ header {
   transition: 0.4s;
 }
 
+#navbar-dropdown:hover #bar1, #navbar-dropdown:hover #bar2, #navbar-dropdown:hover #bar3{
+  background-color: #5070ab;
+}
+
 /* Rotate first bar */
 .change .bar1 {
   -webkit-transform: rotate(-45deg) translate(-3px, 8px) ;
