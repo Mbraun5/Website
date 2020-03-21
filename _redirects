@@ -6,8 +6,8 @@
 # Redirect default Netlify subdomain to primary domain
 http://matthewbraun.netlify.com/* http://matthew-braun.com/:splat 301!
 
-# Redirect with a 404
-/*                          /pages/404.html             404
-
 /pages/resume.pdf           /resume.pdf                 301
 /resume.pdf                 /pages/resume.pdf           200
+
+# Redirect with a 404
+/*                          /pages/404.html:splat             404
