@@ -1,6 +1,6 @@
 # Redirect default Netlify subdomain to primary domain
-http://matthewbraun.netlify.com/*       https://matthew-braun.com/:splat 301!
-https://matthewbraun.netlify.com/*      https://matthew-braun.com/:splat 301!
+# http://matthewbraun.netlify.com/*       https://matthew-braun.com/:splat 301!
+# https://matthewbraun.netlify.com/*      https://matthew-braun.com/:splat 301!
 
 /pages/resume.pdf                       /resume.pdf                 301!
 /resume.pdf                             /pages/resume.pdf           200!
