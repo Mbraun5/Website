@@ -87,7 +87,9 @@ header {
   display: block;
 }
 
-.dropdown-content a:hover {color: #5070ab;}
+.dropdown-content a:hover {
+  color: #5070ab;
+}
 
 .dropdown {
   display: none;
